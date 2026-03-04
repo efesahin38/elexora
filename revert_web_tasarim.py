@@ -1,0 +1,226 @@
+import os
+
+new_html = """<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Web Design | Elexora</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>Take a strong step to move your business to the digital world. <a href="#contact">Get Started &rarr;</a></p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Elexora</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#cozumler">Solutions</a>
+                <a href="#avantajlar">Benefits</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="nav-link-subtle">Contact</a>
+            </div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Page Header (HiBob Style) -->
+    <section class="hero bg-pastel-teal" style="padding: 80px 0 100px 0; min-height: auto; position: relative; overflow: hidden;">
+        <div class="hero-bg-accent" style="background: radial-gradient(circle, #ccfbf1 0%, transparent 70%);"></div>
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <h1 class="fade-in-up" style="font-size: 3.5rem; letter-spacing: -1px; margin-bottom: 1.5rem; color: var(--color-text-main);">
+                Professional <span style="color: var(--text-teal);">Web Design</span>
+            </h1>
+            <p class="fade-in-up delay-1" style="font-size: 1.25rem; color: var(--color-text-muted); max-width: 650px; margin: 0 auto 3rem auto; line-height: 1.6;">
+                We build premium corporate websites that understand your brand, inspire trust, and directly increase your sales.
+            </p>
+            <div class="fade-in-up delay-2" style="display: flex; justify-content: center; gap: 1rem;">
+                <a href="#cozumler" class="btn btn-primary" style="background-color: var(--text-teal);">Explore Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content: Zig Zag Services -->
+    <section id="cozumler" class="services-wrapper" style="padding-top: 100px; padding-bottom: 80px; background-color: white;">
+        <div class="container">
+            
+            <!-- Row 1: UI/UX Design -->
+            <div class="feature-row">
+                <div class="feature-text pr-5 fade-in-up">
+                    <span class="tag tag-teal">Modern & Premium</span>
+                    <h3>Your Digital Storefront is Your Identity.</h3>
+                    <p>Your website is no longer just an internet address; it's your business's most important gateway to the world. Your customers see you there first, and <strong>first impressions are everything.</strong></p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-check text-teal"></i> <strong>Brand Value:</strong> Instantly project a corporate and trustworthy image to your visitors.</li>
+                        <li><i class="fas fa-check text-teal"></i> <strong>User Experience (UX):</strong> Smart architecture that allows your customers to find what they're looking for in seconds.</li>
+                        <li><i class="fas fa-check text-teal"></i> <strong>Conversion Optimized:</strong> Specially designed funnels to turn visitors into buyers.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-teal fade-in-up delay-1" style="padding: 2rem; overflow: hidden; position: relative; border-radius: 24px;">
+                    <img src="https://images.unsplash.com/photo-1541462608141-ad60397d4ad7?auto=format&fit=crop&w=1200&q=80" alt="Premium UI Design" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow-hover);">
+                    <div style="position: absolute; bottom: 40px; right: 40px; background: white; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: var(--shadow-hover); font-weight: 600; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-paint-brush text-teal"></i> Premium UI / UX
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Mobile Responsive (Reverse) -->
+            <div class="feature-row reverse" style="margin-top: 100px;">
+                <div class="feature-text pl-5 fade-in-up">
+                    <span class="tag tag-coral">Flawless Compatibility</span>
+                    <h3>Perfect on Phone, Tablet, and Desktop.</h3>
+                    <p>Today, over 80% of internet traffic comes from mobile devices. If your website looks broken on a phone, you're losing 8 out of 10 customers right from the start.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-mobile-alt text-coral"></i> <strong>100% Mobile Responsive:</strong> Flexible design that automatically adapts to all screen sizes.</li>
+                        <li><i class="fas fa-bolt text-coral"></i> <strong>Lightning Fast Loading:</strong> No more customers exiting your page because it takes too long to load.</li>
+                        <li><i class="fas fa-fingerprint text-coral"></i> <strong>Touch-Friendly:</strong> Large buttons and accessible menus optimized for mobile.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-coral fade-in-up delay-1" style="padding: 2rem; overflow: hidden; position: relative; border-radius: 24px;">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80" alt="Vibrant Mobile UI" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow-hover);">
+                    <div style="position: absolute; top: 40px; left: 40px; background: white; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: var(--shadow-hover); font-weight: 600; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-mobile text-coral"></i> Mobile-First Approach
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: SEO Optimization -->
+            <div class="feature-row" style="margin-top: 100px;">
+                <div class="feature-text pr-5 fade-in-up">
+                    <span class="tag tag-yellow">Google Friendly</span>
+                    <h3>Rank Number One in Search Results.</h3>
+                    <p>You could have the most beautiful website in the world, but if it can't be found on Google, it means nothing. We build your site from the ground up according to modern SEO rules.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-search text-yellow"></i> <strong>Clean Code Structure:</strong> Optimized for Google bots to easily crawl and index your site.</li>
+                        <li><i class="fas fa-chart-line text-yellow"></i> <strong>Competitor Analysis:</strong> Custom architecture tailored to your industry keywords.</li>
+                    </ul>
+                </div>
+                <!-- Google Search Mockup -->
+                <div class="feature-image bg-pastel-yellow fade-in-up delay-1" style="padding: 2rem; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 24px;">
+                    <div style="width: 100%; max-width: 500px; background: white; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 1px solid #e5e7eb; font-family: 'Inter', sans-serif; padding: 1.5rem;">
+                        <div style="display: flex; align-items: center; border: 1px solid #dfe1e5; border-radius: 24px; padding: 10px 20px; margin-bottom: 20px;">
+                            <i class="fas fa-search" style="color: #9aa0a6; margin-right: 15px;"></i>
+                            <div style="flex: 1; color: #202124;">best web design agency</div>
+                        </div>
+                        <div style="text-align: left;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                                <div style="width: 24px; height: 24px; background: var(--color-primary-coral); border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px;">E</div>
+                                <div style="font-size: 12px; color: #4d5156;">Elexora | https://www.elexora.com</div>
+                            </div>
+                            <a href="#" style="color: #1a0dab; font-size: 18px; text-decoration: none; margin-bottom: 5px; display: block;">Elexora | Premium Web Design & Digital Solutions</a>
+                            <div style="color: #4d5156; font-size: 13px;">Elevate your digital presence with Elexora. We create blazing fast, highly converting, and beautifully designed websites.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial Block -->
+    <section style="padding: 60px 0; background-color: var(--bg-pastel-purple);">
+        <div class="container text-center max-w-3xl mx-auto" style="max-width: 800px;">
+            <i class="fas fa-quote-left" style="font-size: 2rem; color: var(--text-purple); opacity: 0.3; margin-bottom: 1rem;"></i>
+            <p class="fade-in-up" style="font-size: 1.25rem; font-weight: 500; font-style: italic; color: var(--color-text-main); line-height: 1.6;">
+                "Our old site was very slow and didn't display properly on mobile. Elexora built a fantastic corporate site from scratch. Not only did they improve the design, but our customer conversion rates also increased by 40%."
+            </p>
+            <div class="fade-in-up delay-1 mt-4">
+                <p style="font-weight: 700; font-size: 1.1rem; margin: 0;">James C.</p>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Construction Company Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="avantajlar" class="benefits-section" style="padding: 5rem 0; background-color: var(--color-bg-light);">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <h2>What Does Custom Web Design Bring to You?</h2>
+            </div>
+            <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="why-card fade-in-up" style="background: white; border-radius: 16px; box-shadow: var(--shadow-soft); text-align: center; padding: 2.5rem 1.5rem;">
+                    <i class="fas fa-briefcase text-teal" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Corporate Prestige</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Instantly create a professional and reliable image for your brand.</p>
+                </div>
+                <div class="why-card fade-in-up delay-1" style="background: white; border-radius: 16px; box-shadow: var(--shadow-soft); text-align: center; padding: 2.5rem 1.5rem;">
+                    <i class="fas fa-chart-line text-coral" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Increased Sales</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Optimized funnels designed to turn visitors into actual customers.</p>
+                </div>
+                <div class="why-card fade-in-up delay-2" style="background: white; border-radius: 16px; box-shadow: var(--shadow-soft); text-align: center; padding: 2.5rem 1.5rem;">
+                    <i class="fas fa-globe text-purple" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Break the Boundaries</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">You get the opportunity to offer your services to the <strong>entire world.</strong> No limits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bottom-cta" style="padding-top: 50px;">
+        <div class="container text-center px-4">
+            <div class="cta-inner fade-in-up" style="background-color: var(--bg-pastel-teal);">
+                <h2>Let's Build Your Digital Storefront</h2>
+                <p>Don't fall behind. Lead the industry with a modern, stylish, and fast website. Contact us today for a free quote.</p>
+                <div class="cta-buttons" style="display: flex; justify-content: center; gap: 1.5rem;">
+                    <a href="https://wa.me/905555555555" target="_blank" class="btn btn-primary btn-large" style="background-color: var(--text-teal);">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Quote
+                    </a>
+                    <a href="mailto:info@elexora.com" class="btn btn-secondary btn-large" style="background: white;">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark">
+        <div class="container">
+            <div class="footer-grid" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem;">
+                <div class="footer-brand" style="max-width: 300px;">
+                    <a href="index.html" class="footer-logo">Elexora</a>
+                    <p style="color: #9CA3AF; margin-top: 1rem;">The fuel for your digital growth. Everything you need, all in one place.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="color: white; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="harita-yonetimi.html" style="color: #9CA3AF;">Maps Management</a></li>
+                        <li><a href="web-tasarim.html" style="color: white; font-weight: 600;">Web Design</a></li>
+                        <li><a href="mobil-uygulama.html" style="color: #9CA3AF;">Mobile Apps</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; color: #9CA3AF; font-size: 0.9rem;">
+                <p>&copy; 2026 Elexora Digital Excellence. All rights reserved.</p>
+                <div class="legal-links" style="display: flex; gap: 1.5rem;">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>"""
+
+with open('/Users/efesahin/Desktop/website/elexora-website/web-tasarim.html', 'w', encoding='utf-8') as f:
+    f.write(new_html)
+
+print("web-tasarim.html reverted to the preferred English layout with top-tier images.")

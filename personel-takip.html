@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Employee Tracking System | Elexora</title>
+    <meta name="description"
+        content="Elexora - Enterprise Employee Tracking and Time Attendance solutions. Modern automation systems that boost your business efficiency.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-pdks {
+            position: relative;
+            padding: 140px 0 100px 0;
+            background: radial-gradient(at 0% 0%, #f0f9ff 0px, transparent 50%),
+                radial-gradient(at 100% 0%, #ecfdf5 0px, transparent 50%),
+                radial-gradient(at 100% 100%, #eff6ff 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #f7fee7 0px, transparent 50%);
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .dashboard-float {
+            animation: float-dash 8s ease-in-out infinite;
+            filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.12));
+            max-width: 600px;
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid #e5e7eb;
+            background: white;
+            padding: 10px;
+        }
+
+        @keyframes float-dash {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-15px) scale(1.02);
+            }
+        }
+
+        .solution-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid #f1f5f9;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--text-teal);
+        }
+
+        .sol-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: var(--bg-pastel-teal);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 20px;
+            color: var(--text-teal);
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+    <!-- Top Banner -->
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/icon.png" alt="Elexora Logo"> Elexora</a>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#avantajlar">Benefits</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Contact</a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pdks">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <span class="tag tag-teal">Smart Automation</span>
+                    <h1 style="font-size: clamp(2.5rem, 8vw, 3.8rem); line-height: 1.1; margin: 1rem 0;">Next-Gen <span
+                            style="background: var(--color-brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Workforce</span>
+                        Management.</h1>
+                    <p style="font-size: 1.25rem; color: var(--color-text-muted); margin-bottom: 2.5rem;">
+                        Automate your employees' shifts and discover enterprise solutions that reduce time losses and
+                        attendance errors to zero.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Free Demo</a>
+                        <a href="#features" class="btn btn-secondary btn-large">How Does It Work?</a>
+                    </div>
+                </div>
+                <div class="hero-graphic fade-in-up delay-1" style="text-align: center;">
+                    <img src="images/hr_dashboard.png" alt="TAMS Dashboard Mockup"
+                        style="width: 100%; max-width: 600px; height: auto; border-radius: 20px; filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.12));">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectoral Solutions -->
+    <section id="solutions" style="padding: 100px 0; background: #fdfdfd;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <span class="tag tag-teal">Flexible Architecture</span>
+                <h2 style="margin-top: 1rem;">TAMS Solutions for Every Scale</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="solution-card fade-in-up">
+                    <div class="sol-icon"><i class="fas fa-building"></i></div>
+                    <h4>Corporate Offices</h4>
+                    <p style="color: var(--color-text-muted);">Modern web-based solutions for flexible working hours and
+                        remote work tracking.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-1">
+                    <div class="sol-icon"><i class="fas fa-industry"></i></div>
+                    <h4>Manufacturing & Factories</h4>
+                    <p style="color: var(--color-text-muted);">Shift management and biometric hardware integration
+                        suitable for heavy industry conditions.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-2">
+                    <div class="sol-icon"><i class="fas fa-hospital"></i></div>
+                    <h4>Service Industry</h4>
+                    <p style="color: var(--color-text-muted);">Multi-location centralized management system for
+                        restaurant, hotel, and clinic chains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zig-Zag Features -->
+    <section id="features" class="services-wrapper" style="padding: 120px 0; background: white;">
+        <div class="container">
+
+            <!-- Row 1: Attendance -->
+            <div class="feature-row">
+                <div class="feature-text pr-5 fade-in-up">
+                    <span class="tag tag-teal">Real-Time Monitoring</span>
+                    <h3>Zero Errors in Clock-In/Out.</h3>
+                    <p>Track all your personnel movements from a single screen, ID-based with second-level accuracy.
+                        Clock-in, clock-out, and total working hours are recorded instantly.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-id-badge text-teal"></i> <strong>Detailed Records:</strong> Employee ID,
+                            Name, Clock-In/Out times, and Total Duration.</li>
+                        <li><i class="fas fa-fingerprint text-teal"></i> <strong>Biometric Integration:</strong> Fully
+                            compatible with fingerprint and facial recognition.</li>
+                        <li><i class="fas fa-user-clock text-teal"></i> <strong>Live Dashboard:</strong> See who has
+                            started their shift in real time.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-teal fade-in-up delay-1"
+                    style="position: relative; padding: 20px; border-radius: 32px; overflow: hidden; height: 450px; background: #f0fdf4; display: flex; align-items: center; justify-content: center;">
+                    <!-- Visual Log Mockup for Row 1 -->
+                    <div
+                        style="background: white; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; max-width: 340px; padding: 20px; font-family: 'Inter', sans-serif;">
+                        <h5
+                            style="margin-bottom: 15px; font-size: 0.9rem; color: #1e293b; border-bottom: 1px solid #f1f5f9; padding-bottom: 10px;">
+                            Clock-In/Out Logs</h5>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.8rem; border-bottom: 1px solid #f8fafc; padding-bottom: 8px;">
+                                <span><strong>ID 104:</strong> James D.</span>
+                                <span style="color: #059669;">08:30 / 18:00</span>
+                                <span style="font-weight: 600;">9.5 Hrs</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.8rem; border-bottom: 1px solid #f8fafc; padding-bottom: 8px;">
+                                <span><strong>ID 112:</strong> Sarah K.</span>
+                                <span style="color: #059669;">09:00 / 17:30</span>
+                                <span style="font-weight: 600;">8.5 Hrs</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.8rem; border-bottom: 1px solid #f8fafc; padding-bottom: 8px;">
+                                <span><strong>ID 109:</strong> Mark A.</span>
+                                <span style="color: #dc2626;">09:15 / --:--</span>
+                                <span style="font-weight: 600; color: #64748b;">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Reports -->
+            <div class="feature-row reverse" style="margin-top: 120px;">
+                <div class="feature-text pl-5 fade-in-up">
+                    <span class="tag tag-coral">Monthly Analysis</span>
+                    <h3>Payroll Calculation Takes Seconds.</h3>
+                    <p>Report the total working hours, overtime, and missing days of hundreds of employees in seconds.
+                        Get instant answers to "Who worked how much?"</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-file-invoice-dollar text-coral"></i> <strong>Detailed Reporting:</strong>
+                            Per-person total working hours and break time breakdowns.</li>
+                        <li><i class="fas fa-chart-pie text-coral"></i> <strong>Department Analysis:</strong> View how
+                            many hours each department has worked.</li>
+                        <li><i class="fas fa-file-export text-coral"></i> <strong>One-Click Excel:</strong> Export all
+                            data instantly for payroll processing.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-coral fade-in-up delay-1"
+                    style="padding: 0; border-radius: 32px; overflow: hidden; height: 450px;">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+                        alt="Monthly Reports and Payroll" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section style="padding: 80px 0; background-color: #fafafa;">
+        <div class="container text-center" style="max-width: 800px;">
+            <i class="fas fa-quote-left"
+                style="font-size: 2.5rem; color: var(--text-teal); opacity: 0.15; margin-bottom: 2rem;"></i>
+            <p
+                style="font-size: 1.5rem; font-weight: 500; font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333;">
+                "After switching to the Elexora TAMS system, our month-end payroll preparation time dropped from 3 days
+                to 15 minutes. The margin of error was completely eliminated and employee satisfaction increased."
+            </p>
+            <div style="margin-top: 30px;">
+                <p style="font-weight: 800; font-size: 1.1rem; margin-bottom: 4px;">Michael Roberts</p>
+                <p style="color: #666; font-size: 0.9rem;">HR Director, Techno-Market Inc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="avantajlar" class="benefits-section" style="padding: 100px 0; background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <h2>Why Elexora TAMS?</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="why-card fade-in-up"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-shield-alt text-teal" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Secure Infrastructure</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Your data is always safe on
+                        cloud-based, high-security servers.</p>
+                </div>
+                <div class="why-card fade-in-up delay-1"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-hand-holding-usd text-coral" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Cost Savings</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Protect your budget by preventing
+                        time losses and miscalculations.</p>
+                </div>
+                <div class="why-card fade-in-up delay-2"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-users text-purple" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Fair Management</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Create a fair environment among your
+                        employees with a transparent tracking system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bottom-cta">
+        <div class="container text-center px-4">
+            <div class="cta-inner fade-in-up" style="background-color: #f0fdfa; border: 1px solid #ccfbf1;">
+                <h2 style="color: #134e4a;">Professionalize Your Operations</h2>
+                <p style="color: #115e59;">Stop wasting time. Contact us today for custom TAMS solutions for your
+                    company.</p>
+                <div class="cta-buttons"
+                    style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://wa.me/4917915312338" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> Reach Us on WhatsApp
+                    </a>
+                    <a href="mailto:elexora.business@hotmail.com" class="btn btn-white btn-large">
+                        <i class="fas fa-envelope"></i> Send an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Elexora</a>
+                    <p>The trusted digital solutions partner for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/elexora.business" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="harita-yonetimi.html">Maps Management</a></li>
+                        <li><a href="web-tasarim.html">Web Design</a></li>
+                        <li><a href="mobil-uygulama.html">Mobile App</a></li>
+                        <li><a href="personel-takip.html">Employee Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+4917915312338">+49 179 1531238</a></li>
+                        <li><a href="mailto:elexora.business@hotmail.com">elexora.business@hotmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elexora Digital Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

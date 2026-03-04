@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Mobile App Development | Elexora</title>
+    <meta name="description"
+        content="Elexora - Bespoke iOS & Android mobile applications. Transform your ideas into powerful, user-centric mobile experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific Mesh Gradient for Hero */
+        .hero-mobile {
+            position: relative;
+            padding: 140px 0 100px 0;
+            background: radial-gradient(at 0% 0%, #fdf2f8 0px, transparent 50%),
+                radial-gradient(at 100% 0%, #ede9fe 0px, transparent 50%),
+                radial-gradient(at 100% 100%, #fef3c7 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #ecfdf5 0px, transparent 50%);
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .floating-phone {
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.15));
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(2deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(-1deg);
+            }
+        }
+
+        .phone-container {
+            width: 280px;
+            height: 560px;
+            background: #000;
+            border-radius: 40px;
+            border: 8px solid #111;
+            position: relative;
+            box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25);
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .phone-screen {
+            height: 100%;
+            background: #fff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mockup-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .solution-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            border: 1px solid #f3f4f6;
+            text-align: center;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-primary-purple);
+        }
+
+        .solution-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: var(--bg-pastel-purple);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 20px;
+            color: var(--text-purple);
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+    <!-- Notification Top Bar -->
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/icon.png" alt="Elexora Logo"> Elexora</a>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#avantajlar">Benefits</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Contact</a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mobile">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <span class="tag tag-purple">App Development</span>
+                    <h1 style="font-size: clamp(2.5rem, 8vw, 3.8rem); line-height: 1.1; margin: 1rem 0;">Bespoke <span
+                            style="background: var(--color-brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Mobile
+                            Apps</span> for Industry Leaders.</h1>
+                    <p style="font-size: 1.25rem; color: var(--color-text-muted); margin-bottom: 2.5rem;">We transform
+                        your ideas into high-performance, visually stunning iOS & Android apps that reach millions of
+                        users.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/4917915312338" target="_blank" class="btn btn-primary btn-large">Get a
+                            Quote</a>
+                        <a href="#solutions" class="btn btn-secondary btn-large">Explore Our Solutions</a>
+                    </div>
+                </div>
+                <!-- Interactive Phone Mockup -->
+                <div class="hero-graphic fade-in-up delay-1" style="text-align: center;">
+                    <img src="images/mobile_app_hero.png" alt="Elite Mobile App Mockup"
+                        style="width: 100%; max-width: 320px; height: auto; border-radius: 40px; filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.15));">
+                    <!-- Stats Badges -->
+                    <div
+                        style="margin-top: -30px; position: relative; z-index: 10; display: flex; gap: 10px; justify-content: center;">
+                        <div
+                            style="background: white; padding: 10px 20px; border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-apple" style="color: #666;"></i>
+                            <span style="font-weight: 600; font-size: 0.8rem;">iOS App Store</span>
+                        </div>
+                        <div
+                            style="background: white; padding: 10px 20px; border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-google-play" style="color: #3B82F6;"></i>
+                            <span style="font-weight: 600; font-size: 0.8rem;">Google Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" style="padding: 100px 0; background: #f9fafb;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <span class="tag tag-purple">Industry Solutions</span>
+                <h2 style="margin-top: 1rem;">Custom Mobile Solutions for Every Need</h2>
+                <p style="max-width: 600px; margin: 1rem auto; color: var(--color-text-muted);">We're by your side to
+                    help you take the right steps in your business's digital transformation.</p>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="solution-card fade-in-up">
+                    <div class="solution-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>E-Commerce & Marketplace</h4>
+                    <p style="color: var(--color-text-muted);">Sales-focused mobile stores with payment systems,
+                        inventory tracking, and live support integration.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-1">
+                    <div class="solution-icon"><i class="fas fa-industry"></i></div>
+                    <h4>Enterprise Task Management</h4>
+                    <p style="color: var(--color-text-muted);">Custom efficiency-boosting tools for field teams,
+                        logistics management, and HR processes.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-2">
+                    <div class="solution-icon"><i class="fas fa-utensils"></i></div>
+                    <h4>Reservation & Service</h4>
+                    <p style="color: var(--color-text-muted);">Online appointment and loyalty program solutions for
+                        restaurants, clinics, and beauty centers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Zig-Zag -->
+    <section class="services-wrapper" style="padding: 120px 0; background: white;">
+        <div class="container">
+
+            <!-- Row 1: UI/UX & Design -->
+            <div class="feature-row">
+                <div class="feature-text pr-5 fade-in-up">
+                    <span class="tag tag-purple">User Experience</span>
+                    <h3>Exceptional Interface and Experience (UX/UI).</h3>
+                    <p>Your app doesn't just need to work — users need to love it. We meticulously craft every pixel,
+                        delivering an intuitive and fluid experience.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-fingerprint text-purple"></i> <strong>Biometric Security:</strong> FaceID
+                            and Fingerprint integration.</li>
+                        <li><i class="fas fa-palette text-purple"></i> <strong>Modern Interface:</strong> Minimalist and
+                            elegant designs.</li>
+                        <li><i class="fas fa-magic text-purple"></i> <strong>Micro-Interactions:</strong> Small details
+                            that delight users.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-purple fade-in-up delay-1"
+                    style="padding: 0; border-radius: 32px; overflow: hidden; height: 450px;">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=800"
+                        alt="App UI Design" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Row 2: Cross Platform -->
+            <div class="feature-row reverse" style="margin-top: 120px;">
+                <div class="feature-text pl-5 fade-in-up">
+                    <span class="tag tag-coral">Cross Platform</span>
+                    <h3>One Codebase, Two Platforms, Zero Compromise.</h3>
+                    <p>Using modern technologies like Flutter and React Native, we develop high-performance apps for
+                        both iOS and Android simultaneously.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-bolt text-coral"></i> <strong>Native Speed:</strong> Fast performance with
+                            direct hardware access.</li>
+                        <li><i class="fas fa-sync text-coral"></i> <strong>Offline Capability:</strong> Core functions
+                            continue even without internet.</li>
+                        <li><i class="fas fa-cloud-upload-alt text-coral"></i> <strong>Push Notifications:</strong> Keep
+                            users constantly updated.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-coral fade-in-up delay-1"
+                    style="padding: 0; border-radius: 32px; overflow: hidden; height: 450px;">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800"
+                        alt="App Development Performance" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section style="padding: 80px 0; background-color: #fafafa;">
+        <div class="container text-center" style="max-width: 800px;">
+            <i class="fas fa-quote-left"
+                style="font-size: 2.5rem; color: var(--text-purple); opacity: 0.15; margin-bottom: 2rem;"></i>
+            <p
+                style="font-size: 1.5rem; font-weight: 500; font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333;">
+                "We transformed our complex internal logistics processes into a single-touch mobile solution with
+                Elexora. The app's speed and intuitive design changed the way our entire team works."
+            </p>
+            <div style="margin-top: 30px;">
+                <p style="font-weight: 800; font-size: 1.1rem; margin-bottom: 4px;">Sarah Jenkins</p>
+                <p style="color: #666; font-size: 0.9rem;">Operations Director, Apex Logistics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="avantajlar" class="benefits-section" style="padding: 100px 0; background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <h2>What a Mobile App Brings to You</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="why-card fade-in-up"
+                    style="background: white; border-radius: 16px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-heart text-purple" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Customer Loyalty</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Build continuous connections with
+                        your customers through push notifications and exclusive offers.</p>
+                </div>
+                <div class="why-card fade-in-up delay-1"
+                    style="background: white; border-radius: 16px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-mobile-alt text-coral" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Always Accessible</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Be the go-to option in your
+                        customers' pockets whenever they need you.</p>
+                </div>
+                <div class="why-card fade-in-up delay-2"
+                    style="background: white; border-radius: 16px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-chart-line text-teal" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Data-Driven Growth</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Analyze user behavior to grow your
+                        business in the right direction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section id="contact" class="bottom-cta">
+        <div class="container text-center px-4">
+            <div class="cta-inner fade-in-up" style="background-color: var(--bg-pastel-purple);">
+                <h2 style="color: #2e1065;">Let's Bring Your Idea to Life</h2>
+                <p style="color: #4c1d95;">Work with a professional partner to claim your place in the mobile revolution
+                    and grow your business.</p>
+                <div class="cta-buttons"
+                    style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://wa.me/4917915312338" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> Reach Us on WhatsApp
+                    </a>
+                    <a href="mailto:elexora.business@hotmail.com" class="btn btn-white btn-large">
+                        <i class="fas fa-envelope"></i> Send an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Elexora</a>
+                    <p>The trusted digital solutions partner for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/elexora.business" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="harita-yonetimi.html">Maps Management</a></li>
+                        <li><a href="web-tasarim.html">Web Design</a></li>
+                        <li><a href="mobil-uygulama.html">Mobile App</a></li>
+                        <li><a href="personel-takip.html">Employee Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+4917915312338">+49 179 1531238</a></li>
+                        <li><a href="mailto:elexora.business@hotmail.com">elexora.business@hotmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elexora Digital Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

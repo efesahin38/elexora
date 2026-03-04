@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Custom Software & Email Automation | Elexora</title>
+    <meta name="description"
+        content="Elexora - Custom software solutions, email automations, and enterprise development tailored to your business. Bespoke technology for your needs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-custom {
+            position: relative;
+            padding: 140px 0 100px 0;
+            background: radial-gradient(at 0% 0%, #f0fdf4 0px, transparent 50%),
+                radial-gradient(at 100% 0%, #ccfbf1 0px, transparent 50%),
+                radial-gradient(at 100% 100%, #f0fdfa 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #f0fdf4 0px, transparent 50%);
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .solution-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid #f1f5f9;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--text-teal);
+        }
+
+        .sol-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: var(--bg-pastel-teal);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 20px;
+            color: var(--text-teal);
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/icon.png" alt="Elexora Logo"> Elexora</a>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#features">Services</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Contact</a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-custom">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <span class="tag tag-teal">Tailor-Made Software</span>
+                    <h1 style="font-size: clamp(2.5rem, 8vw, 3.8rem); line-height: 1.1; margin: 1rem 0;">Bespoke <span
+                            style="background: var(--color-brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Digital</span>
+                        Architecture.</h1>
+                    <p style="font-size: 1.25rem; color: var(--color-text-muted); margin-bottom: 2.5rem;">When
+                        off-the-shelf solutions aren't enough for your business's unique processes, we step in.
+                        Flexible,
+                        scalable, and completely tailored to you.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Let's Discuss Your Project</a>
+                        <a href="#solutions" class="btn btn-secondary btn-large">What Do We Build?</a>
+                    </div>
+                </div>
+                <div class="hero-graphic fade-in-up delay-1" style="text-align: center;">
+                    <img src="images/software_automation.png" alt="Custom Software Architecture Mockup"
+                        style="width: 100%; max-width: 600px; height: auto; border-radius: 20px; filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.12));">
+                </div>
+            </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" style="padding: 100px 0; background: #fdfdfd;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <span class="tag tag-teal">Limitless Possibilities</span>
+                <h2 style="margin-top: 1rem;">Technology That Shapes Around Your Processes</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="solution-card fade-in-up">
+                    <div class="sol-icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Enterprise Automation</h4>
+                    <p style="color: var(--color-text-muted);">Robotize repetitive tasks, eliminate human error, and
+                        accelerate your operations.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-1">
+                    <div class="sol-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h4>Smart Email Systems</h4>
+                    <p style="color: var(--color-text-muted);">High-conversion automated email workflows triggered by
+                        customer behavior.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-2">
+                    <div class="sol-icon"><i class="fas fa-plug"></i></div>
+                    <h4>API & Integration</h4>
+                    <p style="color: var(--color-text-muted);">Make your different software (ERP, CRM, Accounting) talk
+                        to each other seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zig-Zag Features -->
+    <section id="features" class="services-wrapper" style="padding: 120px 0; background: white;">
+        <div class="container">
+
+            <!-- Row 1: Automation -->
+            <div class="feature-row">
+                <div class="feature-text pr-5 fade-in-up">
+                    <span class="tag tag-teal">Email Automation</span>
+                    <h3>Stay Connected with Your Customers at All Times.</h3>
+                    <p>We build systems that work even while you sleep, sending the right email to the right customer at
+                        the right time. Boost loyalty with abandoned cart sequences, welcome series, and special
+                        occasion
+                        reminders.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-magic text-teal"></i> <strong>Personalized Flows:</strong> Dynamic content
+                            tailored for each subscriber.</li>
+                        <li><i class="fas fa-chart-bar text-teal"></i> <strong>High Delivery Rate:</strong> Secure
+                            servers that avoid spam folders.</li>
+                        <li><i class="fas fa-robot text-teal"></i> <strong>Fully Automated Flow:</strong> Set it up
+                            once, let it run for years.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-teal fade-in-up delay-1"
+                    style="padding: 0; border-radius: 32px; overflow: hidden; height: 450px;">
+                    <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&q=80&w=800"
+                        alt="Email Automation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Row 2: Scalability -->
+            <div class="feature-row reverse" style="margin-top: 120px;">
+                <div class="feature-text pl-5 fade-in-up">
+                    <span class="tag tag-coral">Scalable Code</span>
+                    <h3>Build Tomorrow's Technology Today.</h3>
+                    <p>We write code not just for today, but for your future growth targets. We deliver robust
+                        architectures built with modern, fast languages that won't bottleneck as your needs grow.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-layer-group text-coral"></i> <strong>Modern Stack:</strong> Node.js, Python
+                            and cloud-based systems.</li>
+                        <li><i class="fas fa-shield-alt text-coral"></i> <strong>Maximum Security:</strong> Your data is
+                            always in the safest hands with us.</li>
+                        <li><i class="fas fa-headset text-coral"></i> <strong>Ongoing Support:</strong> We're by your
+                            side as long as your software lives.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-coral fade-in-up delay-1"
+                    style="padding: 0; border-radius: 32px; overflow: hidden; height: 450px;">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+                        alt="Tech Architecture" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section style="padding: 80px 0; background-color: #fafafa;">
+        <div class="container text-center" style="max-width: 800px;">
+            <i class="fas fa-quote-left"
+                style="font-size: 2.5rem; color: var(--text-teal); opacity: 0.15; margin-bottom: 2rem;"></i>
+            <p
+                style="font-size: 1.5rem; font-weight: 500; font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333;">
+                "The off-the-shelf software on the market couldn't handle our operations. The Elexora team built
+                an amazing automation in just 2 months that digitized our entire workflow. Our efficiency increased
+                by 40%."
+            </p>
+            <div style="margin-top: 30px;">
+                <p style="font-weight: 800; font-size: 1.1rem; margin-bottom: 4px;">David H.</p>
+                <p style="color: #666; font-size: 0.9rem;">Operations Director, Global Logistics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="avantajlar" class="benefits-section" style="padding: 100px 0; background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <h2>3 Reasons to Trust Us</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="why-card fade-in-up"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-laptop-code text-teal" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Clean & Fast Code</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Professional development with
+                        easy-to-maintain, fast-running code and minimized error margins.</p>
+                </div>
+                <div class="why-card fade-in-up delay-1"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-handshake text-coral" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Boutique Partner</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">You're not just a standard client —
+                        you're a partner whose project we take ownership of as if it were our own.</p>
+                </div>
+                <div class="why-card fade-in-up delay-2"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-gem text-purple" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">High Added Value</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Every development we make must add
+                        tangible value and savings to your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bottom-cta">
+        <div class="container text-center px-4">
+            <div class="cta-inner fade-in-up" style="background-color: #f0fdfa; border: 1px solid #ccfbf1;">
+                <h2 style="color: #134e4a;">Let's Turn Your Vision Into Code</h2>
+                <p style="color: #115e59;">Get a free consultation and quote for your custom software or email
+                    automation project.</p>
+                <div class="cta-buttons"
+                    style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://wa.me/4917915312338" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> Reach Us on WhatsApp
+                    </a>
+                    <a href="mailto:elexora.business@hotmail.com" class="btn btn-white btn-large">
+                        <i class="fas fa-envelope"></i> Send an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Elexora</a>
+                    <p>The trusted digital solutions partner for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/elexora.business" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="harita-yonetimi.html">Maps Management</a></li>
+                        <li><a href="web-tasarim.html">Web Design</a></li>
+                        <li><a href="mobil-uygulama.html">Mobile App</a></li>
+                        <li><a href="ozel-yazilim.html">Custom Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+4917915312338">+49 179 1531238</a></li>
+                        <li><a href="mailto:elexora.business@hotmail.com">elexora.business@hotmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elexora Digital Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

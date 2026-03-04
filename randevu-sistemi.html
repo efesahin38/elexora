@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Online Appointment System | Elexora</title>
+    <meta name="description"
+        content="Elexora - Smart online appointment and calendar management system for your business. 24/7 booking, SMS reminders, and payment integration.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-randevu {
+            position: relative;
+            padding: 140px 0 100px 0;
+            background: var(--color-brand-soft);
+            background-color: white;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .solution-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid #f1f5f9;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--text-coral);
+        }
+
+        .sol-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: var(--bg-pastel-coral);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 20px;
+            color: var(--text-coral);
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/icon.png" alt="Elexora Logo"> Elexora</a>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#avantajlar">Benefits</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Contact</a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-randevu">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <span class="tag tag-coral">Smart Scheduling</span>
+                    <h1 style="font-size: clamp(2.5rem, 8vw, 3.8rem); line-height: 1.1; margin: 1rem 0;">Seamless <span
+                            style="background: var(--color-brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Scheduling</span>
+                        for Modern Business.</h1>
+                    <p style="font-size: 1.25rem; color: var(--color-text-muted); margin-bottom: 2.5rem;">End the
+                        "What time is the next appointment?" confusion. Eliminate phone traffic and open your calendar
+                        to
+                        customers 24/7.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Request a Demo</a>
+                        <a href="#features" class="btn btn-secondary btn-large">Explore Solutions</a>
+                    </div>
+                </div>
+                <div class="hero-graphic fade-in-up delay-1" style="text-align: center;">
+                    <img src="images/appointment_calendar.png" alt="Online Appointment Calendar Mockup"
+                        style="width: 100%; max-width: 550px; height: auto; border-radius: 24px; filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.12));">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectoral Solutions -->
+    <section id="solutions" style="padding: 100px 0; background: #fdfdfd;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <span class="tag tag-coral">Industry Compatibility</span>
+                <h2 style="margin-top: 1rem;">The Right Scheduling for Your Business</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="solution-card fade-in-up">
+                    <div class="sol-icon"><i class="fas fa-stethoscope"></i></div>
+                    <h4>Healthcare & Clinics</h4>
+                    <p style="color: var(--color-text-muted);">Custom scheduling based on patient records, doctor
+                        calendars, and medical procedure durations.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-1">
+                    <div class="sol-icon"><i class="fas fa-cut"></i></div>
+                    <h4>Beauty & Spa</h4>
+                    <p style="color: var(--color-text-muted);">Specialist selection, service-based time allocation, and
+                        package program tracking.</p>
+                </div>
+                <div class="solution-card fade-in-up delay-2">
+                    <div class="sol-icon"><i class="fas fa-user-tie"></i></div>
+                    <h4>Consulting & Legal</h4>
+                    <p style="color: var(--color-text-muted);">Zoom/Meet integration for online meeting appointments and
+                        upfront payment systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zig-Zag Features -->
+    <section id="features" class="services-wrapper" style="padding: 120px 0; background: white;">
+        <div class="container">
+
+            <!-- Row 1: Automation -->
+            <div class="feature-row">
+                <div class="feature-text pr-5 fade-in-up">
+                    <span class="tag tag-coral">24/7 Booking</span>
+                    <h3>Accept Bookings Even While You Sleep.</h3>
+                    <p>Let your customers book appointments outside your working hours. Reduce phone traffic and
+                        lighten your operational load.</p>
+                    <ul class="bullet-list mt-4">
+                        <li><i class="fas fa-bell text-coral"></i> <strong>Automatic Reminders:</strong> Reduce
+                            no-show rates with SMS and Email notifications.</li>
+                        <li><i class="fas fa-sync text-coral"></i> <strong>Google Calendar Integration:</strong>
+                            Instant sync with your personal calendar.</li>
+                        <li><i class="fas fa-users-cog text-coral"></i> <strong>Multi-Staff Management:</strong>
+                            Separate calendar and working hours for each specialist.</li>
+                    </ul>
+                </div>
+                <div class="feature-image bg-pastel-coral fade-in-up delay-1"
+                    style="padding: 0; border-radius: 32px; overflow: hidden; height: 450px;">
+                    <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800"
+                        alt="Automated Scheduling" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section style="padding: 80px 0; background-color: #fafafa;">
+        <div class="container text-center" style="max-width: 800px;">
+            <i class="fas fa-quote-left"
+                style="font-size: 2.5rem; color: var(--text-coral); opacity: 0.15; margin-bottom: 2rem;"></i>
+            <p
+                style="font-size: 1.5rem; font-weight: 500; font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333;">
+                "After switching to the appointment system, our receptionist no longer has to answer 50 phone calls a
+                day. Our customers book their own appointments even at midnight, and we start the day with a ready-made
+                calendar."
+            </p>
+            <div style="margin-top: 30px;">
+                <p style="font-weight: 800; font-size: 1.1rem; margin-bottom: 4px;">Emily Richards</p>
+                <p style="color: #666; font-size: 0.9rem;">Beauty Center Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="avantajlar" class="benefits-section" style="padding: 100px 0; background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-title text-center fade-in-up">
+                <h2>What Does Online Booking Bring to Your Business?</h2>
+            </div>
+            <div class="grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="why-card fade-in-up"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-user-clock text-coral" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Customer Comfort</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Let your customers make plans in
+                        seconds without waiting on the phone.</p>
+                </div>
+                <div class="why-card fade-in-up delay-1"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-hand-holding-heart text-teal"
+                        style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Professional Image</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Project a modern and trustworthy
+                        brand profile that invests in technology.</p>
+                </div>
+                <div class="why-card fade-in-up delay-2"
+                    style="background: white; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; padding: 3rem 2rem;">
+                    <i class="fas fa-chart-pie text-purple" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                    <h4 style="margin-bottom: 1rem;">Detailed Analytics</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Report your busiest hours and most
+                        preferred specialists in real time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bottom-cta">
+        <div class="container text-center px-4">
+            <div class="cta-inner fade-in-up bg-brand-soft" style="border: 1px solid rgba(167, 139, 250, 0.2);">
+                <h2 style="color: var(--color-text-main);">Make Your Calendar Smarter</h2>
+                <p style="color: var(--color-text-muted);">Switch to a system where your customers can book appointments
+                    even while you sleep.</p>
+                <div class="cta-buttons"
+                    style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://wa.me/4917915312338" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> Reach Us on WhatsApp
+                    </a>
+                    <a href="mailto:elexora.business@hotmail.com" class="btn btn-white btn-large">
+                        <i class="fas fa-envelope"></i> Send an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Elexora</a>
+                    <p>The trusted digital solutions partner for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/elexora.business" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="harita-yonetimi.html">Maps Management</a></li>
+                        <li><a href="web-tasarim.html">Web Design</a></li>
+                        <li><a href="mobil-uygulama.html">Mobile App</a></li>
+                        <li><a href="personel-takip.html">Employee Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+4917915312338">+49 179 1531238</a></li>
+                        <li><a href="mailto:elexora.business@hotmail.com">elexora.business@hotmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elexora Digital Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
